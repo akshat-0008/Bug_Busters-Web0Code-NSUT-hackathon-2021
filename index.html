@@ -20,23 +20,37 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      #amg {
-        display: block;
-      }
-
+      
       .thumbnail {
         position: relative;
-        display: inline-block;
+        overflow: hidden;        
+      }
+      
+      .thumbnail img{
+        transition: transform .8s ease;
+      }
+      
+      .thumbnail img:hover{
+        transform: scale(1.3);
       }
 
       .caption {
         position: absolute;
-        top: 50%;
+        border-radius: 5%;
+        background-color: white;
+        padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+        top: 87%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        color: white;
-        font-weight: bold;
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      .caption:hover{
+        cursor: pointer;
+        background-color: rgb(245, 245, 245);
       }
     </style>
 
@@ -82,6 +96,35 @@
           <a class="mr-5 hover:text-gray-900">Third Link</a>
           <a class="mr-5 hover:text-gray-900">Fourth Link</a>
         </nav>
+        <button
+          class="
+            inline-flex
+            items-center
+            bg-gray-100
+            border-0
+            py-1
+            px-3
+            focus:outline-none
+            hover:bg-gray-200
+            rounded
+            text-base
+            mt-4
+            md:mt-0
+          "
+        >
+          Button
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-1"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
       </div>
     </header>
     <hr />
@@ -116,7 +159,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="image/cs-invention-machine-with-semantic-search.jpg"
+            src="assets/images/header/work-from-home-essentials-shop-now-cb7dbd60fccc50dc3fcfa4e658e2e132.jpg"
             class="d-block w-100"
             height="400px"
             width="600px"
@@ -128,7 +171,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="image/cs-worlds-largest-plm-platform.jpg"
+            src="assets/images/header/Slideshow_Sweet_Sale_O_Mine.jpg"
             class="d-block w-100"
             height="400px"
             width="600px"
@@ -140,7 +183,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="image/java-backend--innovative-hotel-self-service-app.jpg"
+            src="assets/images/header/home-decor-accessories-800x500.png"
             class="d-block w-100"
             height="400px"
             width="600px"
@@ -175,71 +218,177 @@
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex w-full mb-20 flex-wrap">
-          <h1
-            class="
-              sm:text-3xl
-              text-2xl
-              font-medium
-              title-font
-              text-gray-900
-              lg:w-1/3 lg:mb-0
-              mb-4
-            "
-          >
-            Master Cleanse Reliac Heirloom
-          </h1>
-          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom.
-          </p>
+        <div class="flex w-full mb-5 flex-wrap">
+          <h1 class="sm:text-4xl text-2xl font-large title-font text-gray-900 lg:w-0 lg:mb-0 mb-4">Categories</h1>
         </div>
         <div class="flex flex-wrap md:-m-2 -m-1">
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/500x300"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/sofa-and-armchairs.webp">
+              <div class="caption">
+                <h7>Sofas & Chairs</h7>
+                
+              </div>
+            </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/501x301"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/beds.webp">
+              <div class="caption">
+                <h7>Beds</h7>
+                
+              </div>
+            </div>
             </div>
             <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/600x360"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/images/categories/tables.webp">
+              <div class="caption">
+                <h7>Tables</h7>                
+              </div>
+            </div>
             </div>
           </div>
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-full">
-              <img
-                alt="gallery"
-                class="w-full h-full object-cover object-center block"
-                src="https://dummyimage.com/601x361"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/images/categories/decoration.webp">
+              <div class="caption">
+                <h7>Decoration</h7>                
+              </div>
+            </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/502x302"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/textile.webp">
+              <div class="caption">
+                <h7>Textile</h7>                
+              </div>
+            </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
-              <img
-                alt="gallery"
-                class="w-full object-cover h-full object-center block"
-                src="https://dummyimage.com/503x303"
-              />
+              <div class="thumbnail">
+              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/kitchenware.jpg">
+              <div class="caption">
+                <h7>Kitchenware</h7>  
+                              
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-20">
+          <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+            <h1 class="sm:text-4xl text-2xl font-large title-font mb-0 text-gray-900">Top selling</h1>
+          </div>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 h-10 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/lamps/lamp.webp" alt="content">              
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/clock.webp" alt="content">              
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/sofa.webp" alt="content">              
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/backpack/backpack4.webp" alt="content">             
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/flowerWase.webp" alt="content">              
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/Textile/rug4.webp" alt="content">              
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <div class="flex space-x-3 mb-4 text-sm font-medium">
+                <div class="flex-auto flex space-x-3">
+                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
+                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300" type="button">Add to bag</button>
+                </div>
+                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300" type="button" aria-label="like">
+                  <svg width="20" height="20" fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

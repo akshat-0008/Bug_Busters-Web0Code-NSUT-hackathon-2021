@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/images/logos/logo.png">
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+         body {
+        background-color: rgba(0, 0, 0, 0.082);
+      }
+
+      .thumbnail {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .thumbnail img {
+        transition: transform 0.8s ease;
+      }
+
+      .thumbnail img:hover {
+        transform: scale(1.3);
+      }
+
+        .dropbtn {
+        background-color: #dce0df00;
+        color: rgb(10, 10, 10);
+        padding: 7.5px;
+        font-size: 24px;
+        font-weight:450;
+        border: none;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: rgba(209, 213, 219, 1);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: rgba(209, 213, 219, 1);
+      }
+    </style>
+    <title>About us</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray-250">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="assets/images/logos/logo.png"
+              alt=""
+              width="170"
+              height=""
+              class="d-inline-block align-text-top"
+            />
+            
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active sm:text-2xl
+                text-2xl
+                font-large
+                title-font
+                rounded-md
+                hover:bg-gray-300
+                mb-0" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <div class="dropdown">                
+                  <button class="dropbtn rounded-md bg-gray-400">Categories</button>             
+                </div>
+                  <div class="dropdown-content rounded-md">
+                    <a href="beds.html">Beds</a>
+                    <a href="decorations.html">Decorations</a>
+                    <a href="kitchenwares.html">Kitchen Wares</a>
+                    <a href="sofasandchairs.html">Sofas and Chairs</a>
+                    <a href="tables.html">Tables</a>
+                    <a href="textile.html">Textile</a>
+                  </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active sm:text-2xl
+                text-2xl
+                font-large
+                title-font
+                rounded-md
+                hover:bg-gray-300
+                mb-0" href="About.html">About us</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="w-1/2
+              flex
+              items-center
+              justify-center
+              rounded-md
+              border border-gray-900 border-opacity-100
+              hover:bg-gray-300" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-wrap w-full mb-4">
+            <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
+              <h1
+                class="
+                  sm:text-6xl
+                  text-2xl
+                  font-bold
+                  title-font
+                  mb-2
+                  text-gray-900
+                "
+              >
+                About us
+              </h1>
+            </div>
+          </div>
+          <p class="sm:text-2xl
+          text-2xl
+          font-normal
+          title-font
+          mb-2
+          text-gray-800">
+            One brand, many companies, and many, many people – that’s us in a nutshell. 
+            Spread all over the world, we have a passion for home furnishing and an inspiring shared 
+            vision: to create a better everyday life for the many people. 
+            This, together with our straightforward business idea, shared values, and a culture based on the spirit of togetherness, guides us in everything we do.
+          </p>
+        </div>
+      </section>
+
+      <img src="assets/images/about/a-boy-playing-in-his-room-ai01-02-PH156118-ikea-l.jpg" class="img-fluid mb-20" />
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="thumbnail lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/about/woman-carrying-IKEA-PS-watering-cans-ai020102-PH126968-ikea-l-thumb.jpg">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-left">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">Together, all over the world
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="text-gray-900 sm:text-lg text-base mb-8 leading-relaxed">The Space&Style Brand unites thousands of co-workers and hundreds of companies with different owners around the world. The retail business is organised in a franchise system with 12 franchisees in 54 markets that–together with the franchisor and other parts of the business – continuously improve and develop the brand.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-left">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">The Space&Style way of retail
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="text-gray-900 sm:text-lg text-base mb-8 leading-relaxed">Whether we are entering new markets or meeting customers in new ways, we are constantly innovating to meet customer expectations.</p>
+          </div>
+          <div class="thumbnail lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/about/retail.jpg">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="thumbnail lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/images/about/retailer.jpg">
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-left">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-bold text-gray-900">More than a retailer
+              <br class="hidden lg:inline-block">
+            </h1>
+            <p class="text-gray-900 sm:text-lg text-base mb-8 leading-relaxed">To meet the needs of our customers we have a unique business model and value chain. It includes product development, design, supply, manufacture and sales. And of course, it starts and ends with our customers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <p class="sm:text-2xl
+          text-2xl
+          font-normal
+          title-font
+          mb-2
+          text-gray-800">
+          <!-- Space&Style is not the work of one person alone, it is the result of many minds and many souls working together through many years of joy and hard work. -->
+          </p>
+        </div>
+      </section>
+
+      <footer class="text-gray-600 body-font">
+        <div
+          class="
+            container
+            px-5
+            py-8
+            mx-auto
+            flex
+            items-center
+            sm:flex-row
+            flex-col
+          "
+        >
+          <a
+            class="
+              flex
+              title-font
+              font-medium
+              items-center
+              md:justify-start
+              justify-center
+              text-gray-900
+            "
+          >
+            <span class="ml-3 text-xl"
+              ><img src="assets/images/logos/logo.png" width="150px"
+            /></span>
+          </a>
+          <p
+            class="
+              text-sm text-gray-500
+              sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0
+              mt-4
+            "
+          >
+            © 2021 Space&Style. All rights reserved.
+            
+          </p>
+          <span
+            class="
+              inline-flex
+              sm:ml-auto sm:mt-0
+              mt-4
+              justify-center
+              sm:justify-start
+            "
+          >
+            <a class="text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      
+</body>
+</html>

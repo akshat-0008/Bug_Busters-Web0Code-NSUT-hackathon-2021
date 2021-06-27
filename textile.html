@@ -14,17 +14,36 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="icon" href="assets/images/logos/logo.png">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <style>
-      .dropbtn {
+         body {
+        background-color: rgba(0, 0, 0, 0.082);
+      }
+
+      .thumbnail {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .thumbnail img {
+        transition: transform 0.8s ease;
+      }
+
+      .thumbnail img:hover {
+        transform: scale(1.3);
+      }
+
+        .dropbtn {
         background-color: #dce0df00;
         color: rgb(10, 10, 10);
-        padding: 10px;
-        font-size: 16px;
+        padding: 7.5px;
+        font-size: 24px;
+        font-weight:450;
         border: none;
       }
       .dropdown {
@@ -46,29 +65,29 @@
         display: block;
       }
       .dropdown-content a:hover {
-        background-color: #ddd;
+        background-color: rgba(209, 213, 219, 1);
       }
       .dropdown:hover .dropdown-content {
         display: block;
       }
       .dropdown:hover .dropbtn {
-        background-color: #cfd4cf;
+        background-color: rgba(209, 213, 219, 1);
       }
     </style>
     <title>Textile</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray-250">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img
-            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            src="assets/images/logos/logo.png"
             alt=""
-            width="30"
-            height="24"
+            width="170"
+            height=""
             class="d-inline-block align-text-top"
           />
-          The Design Cell
+          
         </a>
         <button
           class="navbar-toggler"
@@ -84,17 +103,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
+              <a class="nav-link active sm:text-2xl
+              text-2xl
+              font-large
+              title-font
+              rounded-md
+              hover:bg-gray-300
+              mb-0" aria-current="page" href="index.html"
                 >Home</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
             <li class="nav-item dropdown">
-              <div class="dropdown">
-                <button class="dropbtn">Categories</button>
-                <div class="dropdown-content">
+              <div class="dropdown">                
+                <button class="dropbtn rounded-md bg-gray-400">Categories</button>             
+              </div>
+                <div class="dropdown-content rounded-md">
                   <a href="beds.html">Beds</a>
                   <a href="decorations.html">Decorations</a>
                   <a href="kitchenwares.html">Kitchen Wares</a>
@@ -102,7 +125,15 @@
                   <a href="tables.html">Tables</a>
                   <a href="textile.html">Textile</a>
                 </div>
-              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active sm:text-2xl
+              text-2xl
+              font-large
+              title-font
+              rounded-md
+              hover:bg-gray-300
+              mb-0" href="About.html">About us</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -112,7 +143,13 @@
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-success" type="submit">
+            <button class="w-1/2
+            flex
+            items-center
+            justify-center
+            rounded-md
+            border border-gray-900 border-opacity-100
+            hover:bg-gray-300" type="submit">
               Search
             </button>
           </form>
@@ -138,7 +175,7 @@
                 text-gray-900
               "
             >
-              Collections
+              Textile Collection
             </h1>
           </div>
         </div>
@@ -610,7 +647,7 @@
           "
         >
           <span class="ml-3 text-xl"
-            ><img src="image/DwellSmith.png" width="50px"
+            ><img src="assets/images/logos/logo.png" width="150px"
           /></span>
         </a>
         <p
@@ -620,14 +657,8 @@
             mt-4
           "
         >
-          © 2020 Tailblocks —
-          <a
-            href="https://twitter.com/knyttneve"
-            class="text-gray-600 ml-1"
-            rel="noopener noreferrer"
-            target="_blank"
-            >@knyttneve</a
-          >
+          © 2021 Space&Style. All rights reserved.
+          
         </p>
         <span
           class="

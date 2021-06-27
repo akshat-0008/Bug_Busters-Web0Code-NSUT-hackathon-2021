@@ -57,79 +57,93 @@
       }
     </style>
 
-    <title>Document</title>
+    <title>Home</title>
   </head>
   <body>
-    <header class="text-gray-600 body-font">
-      <div
-        class="
-          container
-          mx-auto
-          flex flex-wrap
-          p-5
-          flex-col
-          md:flex-row
-          items-center
-        "
-      >
-        <a
-          class="
-            flex
-            title-font
-            font-medium
-            items-center
-            text-gray-900
-            mb-4
-            md:mb-0
-          "
-        >
-          <span class="ml-3 text-xl"><img src="..." width="60px" /></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Bootstrap
         </a>
-        <nav
-          class="
-            md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400
-            flex flex-wrap
-            items-center
-            text-base
-            justify-center
-          "
-        >
-          <a class="mr-5 hover:text-gray-900">First Link</a>
-          <a class="mr-5 hover:text-gray-900">Second Link</a>
-          <a class="mr-5 hover:text-gray-900">Third Link</a>
-          <a class="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
         <button
-          class="
-            inline-flex
-            items-center
-            bg-gray-100
-            border-0
-            py-1
-            px-3
-            focus:outline-none
-            hover:bg-gray-200
-            rounded
-            text-base
-            mt-4
-            md:mt-0
-          "
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
+          <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="sofasandchairs.html"
+                    >Sofas and Chairs</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="beds.html">Beds</a></li>
+                <li>
+                  <a class="dropdown-item" href="tables.html">Tables</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="textile.html">Textiles</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="decorations.html"
+                    >Decorations</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="kitchenwares.html"
+                    >Kitchen Wares</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
-    </header>
+    </nav>
     <hr />
 
     <div
@@ -185,12 +199,14 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="assets/images/header/home-decor-accessories-800x500.png"
-            class="d-block w-100"
-            height="400px"
-            width="600px"
-          />
+          <a href="decorations.html">
+            <img
+              src="assets/images/header/home-decor-accessories-800x500.png"
+              class="d-block w-100"
+              height="400px"
+              width="600px"
+            />
+          </a>
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -248,7 +264,7 @@
                   />
                 </a>
                 <div class="caption">
-                  <a class = "text-white" type = "button" href="tables.html">
+                  <a class="text-white" type="button" href="tables.html">
                     <button>Tables</button>
                   </a>
                 </div>
@@ -264,7 +280,7 @@
                   />
                 </a>
                 <div class="caption">
-                  <a class = "text-white" type = "button" href="beds.html">
+                  <a class="text-white" type="button" href="beds.html">
                     <button>Beds</button>
                   </a>
                 </div>
@@ -280,7 +296,11 @@
                   />
                 </a>
                 <div class="caption">
-                  <a class = "text-white" type = "button" href="sofasandchairs.html">
+                  <a
+                    class="text-white"
+                    type="button"
+                    href="sofasandchairs.html"
+                  >
                     <button>Sofas & Chairs</button>
                   </a>
                 </div>
@@ -298,7 +318,7 @@
                   />
                 </a>
                 <div class="caption">
-                  <a class = "text-white" type = "button" href="decorations.html">
+                  <a class="text-white" type="button" href="decorations.html">
                     <button>Decoration</button>
                   </a>
                 </div>
@@ -314,7 +334,7 @@
                   />
                 </a>
                 <div class="caption">
-                  <a class = "text-white" type = "button" href="textile.html">
+                  <a class="text-white" type="button" href="textile.html">
                     <button>Textile</button>
                   </a>
                 </div>
@@ -330,11 +350,9 @@
                   />
                 </a>
                 <div class="caption">
-                  
-                  <a class = "text-white" type = "button" href="kitchenwares.html">
-                  <button>Kitchenware</button>
-                </a>
-
+                  <a class="text-white" type="button" href="kitchenwares.html">
+                    <button>Kitchenware</button>
+                  </a>
                 </div>
               </div>
             </div>

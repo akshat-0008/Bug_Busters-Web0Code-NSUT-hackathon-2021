@@ -6,6 +6,13 @@ conducted by IEEE NSUT.
 
 ## Quick start
 
-The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.app/)
+The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.app/) from any browser.
+
+## References
+
+* [IKEA](https://www.ikea.com/in/en/)
+* [Homecentre](https://www.homecentre.in/in/en/department/bedroom)
+
+
 
 

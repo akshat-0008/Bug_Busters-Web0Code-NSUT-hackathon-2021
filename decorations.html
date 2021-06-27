@@ -19,6 +19,42 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .dropbtn {
+        background-color: #dce0df00;
+        color: rgb(10, 10, 10);
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+      }
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown:hover .dropbtn {
+        background-color: #cfd4cf;
+      }
+    </style>
     <title>Decorations</title>
   </head>
   <body>
@@ -56,40 +92,17 @@
               <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categories
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="sofasandchairs.html"
-                    >Sofas and Chairs</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="beds.html">Beds</a></li>
-                <li>
-                  <a class="dropdown-item" href="tables.html">Tables</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="textile.html">Textiles</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="decorations.html"
-                    >Decorations</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="kitchenwares.html"
-                    >Kitchen Wares</a
-                  >
-                </li>
-              </ul>
+              <div class="dropdown">
+                <button class="dropbtn">Categories</button>
+                <div class="dropdown-content">
+                  <a href="beds.html">Beds</a>
+                  <a href="decorations.html">Decorations</a>
+                  <a href="kitchenwares.html">Kitchen Wares</a>
+                  <a href="sofasandchairs.html">Sofas and Chairs</a>
+                  <a href="tables.html">Tables</a>
+                  <a href="textile.html">Textile</a>
+                </div>
+              </div>
             </li>
           </ul>
           <form class="d-flex">

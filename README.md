@@ -3,3 +3,9 @@ Space & Style is a frontend House application and furniture website.
 
 This is made under the response of WebOCode Hackathon 2021 
 conducted by IEEE NSUT.
+
+## Quick start
+
+The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.app/)
+
+

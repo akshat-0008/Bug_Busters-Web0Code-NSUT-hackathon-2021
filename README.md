@@ -18,4 +18,11 @@ The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.
 * [Bootstrap](https://getbootstrap.com/)
 * [Tailwind CSS](https://tailwindcss.com/)
 
+## New Techs Learned
+
+* Learned how to use different forntend frameworks
+* Gained more knowledge about git and [Github](https://github.com/)
+
+
+
 

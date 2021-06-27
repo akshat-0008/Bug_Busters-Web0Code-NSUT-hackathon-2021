@@ -23,6 +23,13 @@ The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.
 * Learned how to use different forntend frameworks
 * Gained more knowledge about git and [Github](https://github.com/)
 
+## Authors
+
+### Bug_Busters
+
+* Anuj Pratap Singh(email: apschauhan181@gmail.com)
+* Akshat Pandey(email: akshatp454@gmail.com)
+
 
 
 

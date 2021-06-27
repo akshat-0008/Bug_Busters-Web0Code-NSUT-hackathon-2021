@@ -20,20 +20,20 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      body{
+      body {
         background-color: rgba(0, 0, 0, 0.082);
       }
 
       .thumbnail {
         position: relative;
-        overflow: hidden;        
+        overflow: hidden;
       }
-      
-      .thumbnail img{
-        transition: transform .8s ease;
+
+      .thumbnail img {
+        transition: transform 0.8s ease;
       }
-      
-      .thumbnail img:hover{
+
+      .thumbnail img:hover {
         transform: scale(1.3);
       }
 
@@ -50,8 +50,8 @@
         font-size: 15px;
         font-weight: 500;
       }
-      
-      .caption:hover{
+
+      .caption:hover {
         cursor: pointer;
         background-color: rgb(73, 73, 73);
       }
@@ -218,38 +218,65 @@
     </div>
 
     <hr />
-    
 
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto flex flex-wrap">
         <div class="flex w-full mb-5 flex-wrap">
-          <h1 class="sm:text-4xl text-2xl font-large title-font text-gray-900 lg:w-0 lg:mb-0 mb-4">Categories</h1>
+          <h1
+            class="
+              sm:text-4xl
+              text-2xl
+              font-large
+              title-font
+              text-gray-900
+              lg:w-0 lg:mb-0
+              mb-4
+            "
+          >
+            Categories
+          </h1>
         </div>
         <div class="flex flex-wrap md:-m-2 -m-1">
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-1/2">
               <div class="thumbnail">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/images/categories/tables.webp">
+                <a href="tables.html">
+                  <img
+                    alt="gallery"
+                    class="w-full h-full object-cover object-center block"
+                    src="assets/images/categories/tables.webp"
+                  />
+                </a>
                 <div class="caption">
-                  <h7>Tables</h7>                
+                  <h7>Tables</h7>
                 </div>
               </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
               <div class="thumbnail">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/beds.webp">
-              <div class="caption">
-                <h7>Beds</h7>
-                
+                <a href="beds.html">
+                  <img
+                    alt="gallery"
+                    class="w-full object-cover h-full object-center block"
+                    src="assets/images/categories/beds.webp"
+                  />
+                </a>
+                <div class="caption">
+                  <h7>Beds</h7>
+                </div>
               </div>
-            </div>
             </div>
             <div class="md:p-2 p-1 w-full">
               <div class="thumbnail">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/sofa-and-armchairs.webp">
+                <a href="sofasandchairs.html">
+                  <img
+                    alt="gallery"
+                    class="w-full object-cover h-full object-center block"
+                    src="assets/images/categories/sofa-and-armchairs.webp"
+                  />
+                </a>
                 <div class="caption">
                   <h7>Sofas & Chairs</h7>
-                  
                 </div>
               </div>
             </div>
@@ -257,28 +284,45 @@
           <div class="flex flex-wrap w-1/2">
             <div class="md:p-2 p-1 w-full">
               <div class="thumbnail">
-              <img alt="gallery" class="w-full h-full object-cover object-center block" src="assets/images/categories/decoration.webp">
-              <div class="caption">
-                <h7>Decoration</h7>                
+                <a href="decorations.html">
+                  <img
+                    alt="gallery"
+                    class="w-full h-full object-cover object-center block"
+                    src="assets/images/categories/decoration.webp"
+                  />
+                </a>
+                <div class="caption">
+                  <h7>Decoration</h7>
+                </div>
               </div>
-            </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
               <div class="thumbnail">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/textile.webp">
-              <div class="caption">
-                <h7>Textile</h7>                
+                <a href="textile.html">
+                  <img
+                    alt="gallery"
+                    class="w-full object-cover h-full object-center block"
+                    src="assets/images/categories/textile.webp"
+                  />
+                </a>
+                <div class="caption">
+                  <h7>Textile</h7>
+                </div>
               </div>
-            </div>
             </div>
             <div class="md:p-2 p-1 w-1/2">
               <div class="thumbnail">
-              <img alt="gallery" class="w-full object-cover h-full object-center block" src="assets/images/categories/kitchenware.jpg">
-              <div class="caption">
-                <h7>Kitchenware</h7>  
-                              
+                <a href="kitchenwares.html">
+                  <img
+                    alt="gallery"
+                    class="w-full object-cover h-full object-center block"
+                    src="assets/images/categories/kitchenware.webp"
+                  />
+                </a>
+                <div class="caption">
+                  <h7>Kitchenware</h7>
+                </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
@@ -289,22 +333,83 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-0 lg:mb-0">
-            <h1 class="sm:text-4xl text-2xl font-large title-font mb-0 text-gray-900">Top selling</h1>
+            <h1
+              class="
+                sm:text-4xl
+                text-2xl
+                font-large
+                title-font
+                mb-0
+                text-gray-900
+              "
+            >
+              Top selling
+            </h1>
           </div>
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/3 h-10 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/lamps/lamp.webp" alt="content">              
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+              <img
+                class="h-96 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/lamps/lamp.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Chichen Itza
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -312,16 +417,66 @@
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/clock.webp" alt="content">              
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+              <img
+                class="h-96 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/clock.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Colosseum Roma
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -329,16 +484,66 @@
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-96 rounded w-full object-cover object-center mb-6" src="assets/images/products/sofa.webp" alt="content">              
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+              <img
+                class="h-96 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/sofa.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                Great Pyramid of Giza
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -346,16 +551,66 @@
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/backpack/backpack4.webp" alt="content">             
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <img
+                class="h-92 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/backpack/backpack4.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                San Francisco
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -363,16 +618,66 @@
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/flowerWase.webp" alt="content">              
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <img
+                class="h-92 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/flowerWase.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                San Francisco
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>
@@ -380,16 +685,66 @@
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
             <div class="bg-gray-100 p-6 rounded-lg">
-              <img class="h-92 rounded w-full object-cover object-center mb-6" src="assets/images/products/Textile/rug4.webp" alt="content">              
-              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+              <img
+                class="h-92 rounded w-full object-cover object-center mb-6"
+                src="assets/images/products/Textile/rug4.webp"
+                alt="content"
+              />
+              <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
+                San Francisco
+              </h2>
               <div class="flex space-x-3 mb-4 text-sm font-medium">
                 <div class="flex-auto flex space-x-3">
-                  <button class="w-1/2 flex items-center justify-center rounded-md bg-black text-white" type="submit">Buy now</button>
-                  <button class="w-1/2 flex items-center justify-center rounded-md border border-gray-300 hover:bg-gray-300" type="button">Add to bag</button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      bg-black
+                      text-white
+                    "
+                    type="submit"
+                  >
+                    Buy now
+                  </button>
+                  <button
+                    class="
+                      w-1/2
+                      flex
+                      items-center
+                      justify-center
+                      rounded-md
+                      border border-gray-300
+                      hover:bg-gray-300
+                    "
+                    type="button"
+                  >
+                    Add to bag
+                  </button>
                 </div>
-                <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-gray-400 border border-gray-300 hover:bg-gray-300" type="button" aria-label="like">
+                <button
+                  class="
+                    flex-none flex
+                    items-center
+                    justify-center
+                    w-9
+                    h-9
+                    rounded-md
+                    text-gray-400
+                    border border-gray-300
+                    hover:bg-gray-300
+                  "
+                  type="button"
+                  aria-label="like"
+                >
                   <svg width="20" height="20" fill="currentColor">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                    />
                   </svg>
                 </button>
               </div>

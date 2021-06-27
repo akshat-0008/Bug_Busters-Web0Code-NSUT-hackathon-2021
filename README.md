@@ -13,6 +13,9 @@ The site can be viewed at [SpacenStyle](https://spacenstyle-bug-busters.netlify.
 * [IKEA](https://www.ikea.com/in/en/)
 * [Homecentre](https://www.homecentre.in/in/en/department/bedroom)
 
+## Frameworks used
 
+* [Bootstrap](https://getbootstrap.com/)
+* [Tailwind CSS](https://tailwindcss.com/)
 
 

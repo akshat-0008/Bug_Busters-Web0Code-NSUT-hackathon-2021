@@ -1,2 +1,4 @@
 # [Space & Style](https://spacenstyle-bug-busters.netlify.app/)
-This repository is for the frontend Web0Code Hackathon organized by NSUT 2021
+Space & Style is a frontend House application and furniture website.
+This is made under the response of WebOCode Hackathon 2021 
+conducted by IEEE NSUT.
